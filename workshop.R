@@ -98,7 +98,7 @@ FeaturePlot(pbmc_filt, "nCount_RNA")
 
 ##### Differential gene expression #####
 #To find marker genes for cluster2
-cluster2.markers <- FindMarkers(pbmc, ident.1 = 2)
+cluster2.markers <- FindMarkers(pbmc_filt, ident.1 = 2)
 head(cluster2.markers, n = 5)
 
 #Find markers for all clusters
